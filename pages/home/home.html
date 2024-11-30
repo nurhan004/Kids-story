@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./home.css">
     <script src="https://cdn.tailwindcss.com"></script>
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
       }
-    }
-  </style>
+    </style>
 </head>
+
 <body>
-<!-- <header>
+    <header class=" shadow-xl">
         <div class="w-[1700px] h-[73px] m-auto ">
             <div class="flex ml-[100px]">
                 <img src="./img/logo (1).svg" alt="">
@@ -116,42 +116,58 @@
                
 
               
-            
-                  <img src="./img/телефон.svg" alt="" class=" mt-[10px] ml-[90px]">
                 
-                 
+                  <img src="./img/телефон.svg" alt="" class=" mt-[10px] ml-[90px]">
                   <div class="flex-wrap ml-[6px] mt-[20px]">
                     <h1 class="w-[172px] h-[19px] font-normal	 text-[20px] text-[#334155] ">+7 495 123 34 25</h1>
                     <p class="w-[147px] h-[12px] font-bold ml-[10px] mt-[5px]	 text-[10px] text-[#EA5D4A]">Заказать обратный звонок</p>
   
                   </div>
-                  <a href="https://github.com/nurhan004/Kids-story">
-
-                    <img src="./img/соц сети.svg" alt="" class="ml-[20px] mt-[20px]">
-
-                  </a>
             
                
 
+                  <img src="./img/соц сети.svg" alt="" class="ml-[20px] mt-[20px]">
               
-                <button  data-modal="modal6" class=" open-modal w-[192px] h-[40px] rounded-[50px] bg-[#8081BD] text-white ml-[30px] mt-[20px]">
+                <button  data-modal="modal6" class=" open-modal  w-[192px] h-[40px] rounded-[50px] bg-[#8081BD] text-white ml-[30px] mt-[20px]">
                   <h1 class="w-[168px] h-[15px] font-bold	 text-[12px] ml-[10px] mb-[3px]">Записаться на экскурсию</h1>
                 </button>
+                <nav class="text-xl font-normal">
+                  
+                    <!-- <button id="logoutBtn" class="border p-2 bg-red-500 rounded-xl text-white">Выйти</button> -->
+                    <button id="logoutBtn" class="group w-[35px] h-[35px] ml-[100px] mt-[13px] flex items-center justify-start w-11 h-11 bg-red-600 rounded-full cursor-pointer relative overflow-hidden transition-all duration-200 shadow-lg hover:w-32 hover:rounded-lg active:translate-x-1 active:translate-y-1"
+>
+  <div
+    class="flex items-center justify-center w-full transition-all duration-300 group-hover:justify-start group-hover:px-3"
+  >
+    <svg class="w-3 h-3" viewBox="0 0 512 512" fill="white">
+      <path
+        d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+      ></path>
+    </svg>
+  </div>
+  <div
+    class="absolute right-5 transform translate-x-full opacity-0 text-white text-lg font-semibold transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+  >
+  <h1 class="w-[30px] font-semibold text-[16px] mr-[30px]">
+      Выйти
+
+  </h1>
+  </div>
+</button>
+
+    
+                </nav>
 
             </div>
             <div>
-             
+              <!-- <h1 class="font-semibold text-2xl italic text-yellow-700">JavaScript</h1> -->
           </div>
-          <nav class="text-xl font-normal">
-           
-              <a href="./pages/signin/signin.html" class="ml-3">Sign In</a>
-              <a href="./pages/signup/signup.html" class="ml-3">Sign Up</a>
-          </nav>
+     
       </div>
 
  
   <div>
-             <div class="form-container">
+            <!-- <div class="form-container">
            
               <h2 class="form-title">Запишитесь на пробный день!</h2>
               
@@ -178,27 +194,25 @@
               </form>
             </div> -->
 
-        <!-- </div>
-        
-    </header>  -->
-    <body class="bg-grey-100 flex items-center justify-center min-h-screen">
-      <div class="bg-white p-8 rounded shadow-md w-96">
-          <h2 class="text-2xl font-bold mb-4 text-center">Регистрация</h2>
-          <form id="signinForm" class="space-y-4">
-              <input id="signinEmail" class="w-full p-2 border rounded focus:outline-none focus:ring-green-300"
-                  type="email" placeholder="Email">
-              <input type="password" id="signinPassword"
-                  class="w-full p-2 border rounded focus:outline-none focus:ring-green-300" placeholder="Password">
-              <button type="submit"
-                  class="w-full bg-blue-500 text-white py-2 rounded shadow hover:bg-blue-600">Войти</button>
-          </form>
-          <p class="text-center mt-4">
-              <a href="./pages/signup/signup.html" class="text-blue-500 hover:underline">Нет аккаунта? Регистрация</a>
-          </p>
-      </div>
-      <script src="./signin.js"></script>
+        </div>
+ 
 
-   
-    <script src="./app.js"></script>
+            </nav>
+        </div>
+    </header>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <footer></footer>
+  
+  
+    <script src="./home.js"></script>
 </body>
+
 </html>
