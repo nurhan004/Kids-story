@@ -146,12 +146,37 @@
               <button  data-modal="modal6" class=" open-modal   w-[192px] h-[40px] rounded-[10px] bg-[#8081BD] text-white relative top-[20px] left-[30px]">
                 <h1 class="w-[168px] h-[15px] font-bold	 text-[12px] ml-[10px] mb-[3px]">Записаться на экскурсию</h1>
               </button>
+              <script>
+              
+                document.addEventListener('DOMContentLoaded', () => {
+                    const profileButton = document.getElementById('profileButton');
+                    const dropdownMenu = document.getElementById('dropdownMenu');
+                    const logoutButton = document.getElementById('logoutButton');
+            
+                    profileButton.addEventListener('click', () => {
+                        dropdownMenu.classList.toggle('hidden');
+                    });
+            
+               
+                    document.addEventListener('click', (event) => {
+                        if (!profileButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                            dropdownMenu.classList.add('hidden');
+                        }
+                    });
+            
+                  
+                    logoutButton.addEventListener('click', (event) => {
+                        event.preventDefault(); 
+                        window.location.href = './signin.html'; 
+                    });
+                });
+            </script>
                   
               <div class="relative ml-[350px] top-[10px]">
                 
                 <button id="profileButton" class="">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASgAAACrCAMAAADiivHpAAAAe1BMVEX////u7u4AAADt7e309PT39/f6+vry8vL8/PyVlZXk5ORPT0+AgICpqam/v79KSkq1tbVqamqJiYmgoKBhYWGPj4+IiIjZ2dkhISHFxcW5ubl4eHiwsLDh4eGampoxMTE8PDwyMjIaGhpbW1tEREQSEhJVVVVubm4pKSnewvyGAAAKj0lEQVR4nO1d6XrjKgw1FzBOZprpdE+X2Wfa93/CW7M4wgazOjgN+lV9cY/FMQYJCdw0XCjqBXdc6TBXWvGTUKhQ+GWICIVxhQmFiJ80OKG0LmwTHINwJAgus6kSrqlEVaIqUadClLFl50IU9ru73jIM747h3TG8uwtbwqFewwxiI4iNw0xFDlN1OLupiigqhHBJUNIRlodLwTYQjyHxOKqPWB8qdj7UDmK7ujNO787KVOzC9n2VHXdH8O7IPUy4XqbOAIcLmlqJqkRVogoRhbkMM3Qvwwzdy3B3LuruXNTduai7c6EQjkC44e4ATsPuILYOhx1w6aaaWq5M7bhQ1gsSSou40orfhEK50ojLCFAYEwoBijfcFJsRO1wYdl5T5YOL9OLsvR/N936zw8kVt2eeydRQh1NrWY31KlEliKpBcejdp5FmcsBjhIsPijOYqoiCsx5rxdhvUKi4Ts5MQiFThWlwdmwNjlrhSBDcoqbO+FFT5wTl9aPQ6vwoDXvkR/m+ypndXQP2yj3zQkSdXghTiapE5SUqZDD/8EHx3GDechHrw0worVAoUAjt+r87g0I6cJlUNDgjtriOBcEZsJ2mEgM2DTFVwklyjcvWfp45jun9nkExNjmc8UGxe8G+BsU1KF41UTUott89zteWd7e/+Bo2g9gEYlPDoHJsUxVR4n87wKt0NzoUc3eotBDbBOckyoStwaWbqrXcZGr1owwtTwqK0XwPTQqKkR+cr2e+jKm+jTn7EKYSVYnKS5RjMEdwhFz3CueSpr5bR6t4SWN/qEMPhQ8VQeJRzAyNJthDUOyaoZ19BJqKNFNNfcTP1NyxnlzJkHhBinzNxBqHvKtY46C5sNcSFG8vNp+FXHG5Myh3U+XKoHw2KClwm4ttMaLGUSz+/d+q5Tc+HlEzsyi9L02EW+5pNFFoRFT0DI1OgKd3ppjXYD7T8ng/ShH/pzQJPvIH8uAZFI9onXFJvXrovjQHfrI/vEyRq1e+RNnigpvSFPjJzYGoMrFe97c0BX7yty1MFJaG3DbyOujvt1DpuNKB61pq+idPxQDXQkVddyUNxKlETQdzFDKYb6UdO9NM0W8wAXNkn6izBsWHpCIeXmvRmLkp12lqt5MGbpvAoBiNBnOZDoW5UQLTpjPK+z91iqhr9aBhrbGmzPwUozSe2BtFlGY3SARbFb2xDXgKPn7UKNJEiqj/vt5w+SokSLkJUsLgvir7tijRj5KXgwk/KNajn5YafvPKJ2obfBEcfA00ZCKKXJSmwE8uSAGitKCYPZTmwEcemHU6P1KPQuwkXPN9NqJ8B/PJLIrbx9IsuOWxNUVv05abVk8VUVo5tqE2212O3e7fShMxL2/7tjXUtbuq0vXGZtgvhRjbPf378onLFyFByqcgJfBG/552jOQo05mOOhHJMkZmYg75CouYo7Vf56lIuBbCddPrBg+RsDUlQHHo2gWeYncQu4UtW0UCNA9RwYs8IZlivEKisOOp+xHlu8HJVG/qTdRxTUVN2Njv3ISUvMFJ29qVDpduqpr11FOI9qOinJPWAOeu5fKDSzB1waD47IpdK1GVqHJE1Tpz914YvWXc1YSzaNxpU8NgDuAYhMt0IpluauheGPtisXMBnU6VmbXn4PX4gHVtT1NT4JbZL+X5os44nO7u7PkyRZu6wIlkmJGo0jCq/5OnomFTgK3gRth9VLySWI+83H0vveZkl+93LwStgii6cVtbVjZ0WaL8Is3mqTQPbnlqAFGRK0K+PQoq2iak59Is+MhzQo+CLY8Pig+p4nVLnyguGhST1Q9QQjYlEqBaSv1HaQr85EfplPqLMuR6w+WayzerIi/75lLsCCY4O/a1clxeChAFHFimaoJ3mm/ou9WAQReSQBeSZoJrVHr2nh31RLJxUDwQtRcnM6rd0uJkRtlMoXSAajXx8MnlsKeY8fMgZWN6xQTXzmEzfjgkgGtVxv9+HJSEBsVxe40GUZPeK96uUrAqkNomNtQVDToXTlaeTlfy5nhV0OhVyR8Un4Bf3svTgahCsd5J7PB4H6KKE9W8lubAR16b8kTREyi5e6DpRHnmIO0pzeblZ2keXPL9pZFEWdOlntnXkcMpFODrOIi/XvU+j1/XkVkYreVGosJXwe/3j8+Xvey4PPK/nw3Kjl/2/GhQxGWXBiUFbn8/fZkgN84V9twJUK2WoYVKp1U5yAoKqfByCHkjURpBIRzxhGsgnIY9eP0RPeromWLPvF6ufGrNFK+CqOj0a4ZaLpgpHoiCcIt8uyr0RLITStbmwo6Cc6bokzLFeBY7uDRxHi63qVp3rsciHbsquBJViapEhRGVHBR/pOMlNexRULx8qbfzoyDpRe6LmKrDNVp3Tai3ogzml7hyCMEmSgcVFetxhQK4Q6wHEMKwYaynV8iFZmHk5SiAKMOrfL97vuByKYJ2q3IplGercmFQnNh2uOedbfWgRFC8+VV6zWlOfm3WERQTtuJyOyE/meuM5mWCYr1H4VNYM8emCR+2XBI1M0YlzHrih5M4F+mmBe2Lm/XsfpSfc3Jaeb2E5IJtHvNds/z4mWJJgy9Rtlf5BEaoXh7iicoT66mDtl7F8la77bvpVn6ChvfZLQYKlgoS1wmFCUWskBGhiJU0qsEJBUm4LcAWcNgA16ohNPmgrUSiVNnPYwNvqOU+CIQbKp4AdgsVmU2zVVOFYjeX0sBtKlGJg7nqURfSLjItepN2aXsycp0sDLd4mOvzrrUelRAUGxaLAzZPDYVkb7K08pbLBiq3LsX0T3bFCadjq/qtbfCaud7yxtBhTEdpU6gMPRSfVFVw0WO6a525bwiD3UauQbB1llqQKC0oPo2z2/jJbYWP6e6u3HaWlrsO+RFlWGEfrx5ogzm2DebI9CGD1fepi8bweYjQwdzuR3knF8jL7YqXpH7evhDf5EL2oFh7Ufk5W/qm9xU5nJT27UhJV0kafInKnCybPgQVwgiElLyea9SpCdAFTa1E5QqK3d9ciD/72nZM92GiKPntqvEx3Ymbjs5GGvAULOl/e1A8eajBJ5Kt+dtV9USy1ZZPny1RZ10+7bh73HdinXfXsF2r4PqejGObqoiaGcwDZugPdbzk6JhuF/EzaRNtE5IzU+IMYTqI3UJszz7C7HBhphpLOkRny7y7Jar3G+AML2oxU30bc/YhTCWqErUAUbn3S8ENJpmP6S5kKtLO4ZRrg6SbKmJBUVRLdLICWNZlMJhQZQY4AzY1KDJZ64LzNFXeVcNOMbVRT+HD+VGZdwMoopBnD/UcJhDs/S7sjxTCVKIqUSdOlAa3JqIMQ1pMpBm6wUlb4Sw/mLu/XUWtm5CIoRw726cxXPulTNjLfMXD2fIVHdNt9cztQfFRTK0hTIiplahK1BGJio40zXfPExQXMhVpX2xUCt9yJc4MfR/uuSLPDO0mSifPDG2BIqeSERwDcHbs1g6HIJynqe3UVDXRBZqqnoJfaOjyo44XFDdWuFzJhRoUf6gQphJ1TkSddUrd09PXW9Zr47OHIZy8uwt7GMwB3OLfrgo+IEIuRAvRFGr/KUbJDHdsU5OP6Q57UdNOJHPA5TPV9Kr4vso1hKlEVaIqUZWo9RL1P9hmytgYSEuaAAAAAElFTkSuQmCC" alt="Profile" class="w-10 h-10 rounded-full">
-                    <!-- <span class="text-gray-700 font-medium">👤</span> -->
+                  
                 </button>
         
                 <div id="dropdownMenu" class="absolute z-[+100] right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden">
