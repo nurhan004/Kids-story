@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./home.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
@@ -15,9 +16,10 @@
 </head>
 
 <body>
-    <header class=" shadow-xl">
+    <header >
         <div class="w-[1700px] h-[73px] m-auto ">
-            <div class="flex ml-[100px]">
+            <div class="flex ml-[200px]">
+            
                 <img src="../../img/logo (1).svg" alt="">
                 <nav>
               
@@ -31,6 +33,10 @@
                     </ul>
                     
                 </nav>
+            
+              
+          
+            
            
                 <div id="modal1" class="modal">
                   <div class="modal-content">
@@ -112,92 +118,297 @@
                     <h3>+996 709 310 001</h3>
                   </div>
                 </div>
-                <a href="https://github.com/nurhan004/Kids-story">
+                <div id="modal7" class="moda">
+                  <div class="moda-content">
+                    <span class="close">&times;</span>
+                    <img 
+                    src="https://kidsstory.life/wp-content/uploads/2022/07/photo1673945535-566x556.jpeg" 
+                    alt="" 
+                    class="w-[390px] h-[370px] rounded-[10px] h-[270px] cursor-pointer" 
+                    
+                  >
+                  <div class="mt-[30px]">
+                    <h1 class="w-[405px] text-[#8081BD] ml-[450px] relative bottom-[350px] font-bold text-[45px] ">Тренер каратэ <span class="mr-[70px]">Kids Story</span></h1>
+                      <div class=" ml-[500px] relative bottom-[300px] ">
 
-                    <img src="../../img/соц сети.svg" alt="" class="ml-[20px] mt-[20px]">
-                </a>
-              
-                <button  data-modal="modal6" class=" open-modal  w-[192px] h-[40px] rounded-[50px] bg-[#8081BD] text-white ml-[30px] mt-[20px]">
-                  <h1 class="w-[168px] h-[15px] font-bold	 text-[12px] ml-[10px] mb-[3px]">Записаться на экскурсию</h1>
-                </button>
-                <nav class="text-xl font-normal">
+                        <h1 class="w-[125px] text-[#8081BD] font-bold text-[20px]">РУССКИХ</h1>
+                        <h1 class="w-[125px] text-[#334155] font-normal  text-[20px]">Ольга</h1>
+                        <p class="w-[110px] text-[#334155] font-medium text-[14px]">Тренер каратэ Стаж 5 лет</p>
+                      </div>
+                      <div class="w-[500px]">
+                        ✅ Действующий тренер Федерации Киокушин Будо каратэ Росси, тренерский стаж более 5 лет, воспитанники зональные и региональные призеры.
+👩🏼‍🎓 Образование МАИ
+👩🏼‍🎓 Курсы переподготовки Макса Дедика. Тренер киокушинкай
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <button  data-modal="modal6" class=" open-modal   w-[192px] h-[40px] rounded-[10px] bg-[#8081BD] text-white relative top-[20px] left-[30px]">
+                <h1 class="w-[168px] h-[15px] font-bold	 text-[12px] ml-[10px] mb-[3px]">Записаться на экскурсию</h1>
+              </button>
                   
-                    <!-- <button id="logoutBtn" class="border p-2 bg-red-500 rounded-xl text-white">Выйти</button> -->
-                    <button id="logoutBtn" class="group w-[35px] h-[35px] ml-[20px] mt-[13px] flex items-center justify-start w-11 h-11 bg-red-600 rounded-full cursor-pointer relative overflow-hidden transition-all duration-200 shadow-lg hover:w-32 hover:rounded-lg active:translate-x-1 active:translate-y-1"
->
-  <div
-    class="flex items-center justify-center w-full transition-all duration-300 group-hover:justify-start group-hover:px-3"
-  >
-    <svg class="w-3 h-3" viewBox="0 0 512 512" fill="white">
-      <path
-        d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
-      ></path>
-    </svg>
-  </div>
-  <div
-    class="absolute right-5 transform translate-x-full opacity-0 text-white text-lg font-semibold transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-  >
-  <h1 class="w-[30px] font-semibold text-[16px] mr-[30px]">
-      Выйти
+              <div class="relative ml-[350px] top-[10px]">
+                
+                <button id="profileButton" class="">
+                    <img src="data:image/png;base64,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" alt="Profile" class="w-10 h-10 rounded-full">
+                    <!-- <span class="text-gray-700 font-medium">👤</span> -->
+                </button>
+        
+                <div id="dropdownMenu" class="absolute z-[+100] right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden">
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Settings</a>
+                    <button id="logoutBtn" class="group w-[30px] h-[30px] ml-[20px] mt-[13px] flex items-center justify-start w-11 h-11 bg-red-600 rounded-full cursor-pointer relative overflow-hidden transition-all duration-200 shadow-lg hover:w-32 hover:rounded-lg active:translate-x-1 active:translate-y-1"
+                    >
+                      <div
+                        class="flex items-center justify-center w-full transition-all duration-300 group-hover:justify-start group-hover:px-3"
+                      >
+                        <svg class="w-3 h-3" viewBox="0 0 512 512" fill="white">
+                          <path
+                            d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div
+                        class="absolute right-5 transform translate-x-full opacity-0 text-white text-lg font-semibold transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                      >
+                      <h1 class="w-[30px] font-semibold text-[15px] mr-[30px]">
+                          Выйти
+                    
+                      </h1>
+                      </div>
+                    </button>
+                </div>
+            </div>
+              
+                </div>
+           
+            
+             
 
-  </h1>
-  </div>
-</button>
-
-    
-                </nav>
+            
 
             </div>
             <div>
-              <!-- <h1 class="font-semibold text-2xl italic text-yellow-700">JavaScript</h1> -->
+  
           </div>
      
       </div>
+      
 
  
-  <div>
-            <!-- <div class="form-container">
-           
-              <h2 class="form-title">Запишитесь на пробный день!</h2>
-              
-      
-              <p class="form-description">
-                В него входит 3-5 разовое питание, посещение соляной пещеры, игры, прогулки и занятия по расписанию!
-              </p>
-              
-         
-              <form class="signup-form">
-                <input type="text" class="input-name" placeholder="Ваше имя" required>
-                <input type="tel" class="input-phone" placeholder="+7 _ _ _ - _ _ _ - _ _ - _ _" required>
-                <input type="email" class="input-email" placeholder="Ваш e-mail" required>
-                
-              
-                <label class="checkbox-container">
-                  <input type="checkbox" class="input-checkbox" required>
-                  <span class="checkbox-text">Я принимаю условия пользовательского соглашения</span>
-                  <span class="checkmark"></span>
-                </label>
-                
-        
-                <button type="submit" class="submit-button">Записаться</button>
-              </form>
-            </div> -->
+  <div> 
 
         </div>
+        
  
 
             </nav>
         </div>
     </header>
+
+    <section>
+      <div class="w-[1900px] h-[560px] m-auto mt-[40px]  rounded-[15px]  bg-[#FDDC4E]  ">
+        <div class="absolute">
+          <img src="../../img/Vector (2).svg" alt="" class="absolute">
+          <img src="../../img/Vector (4).svg" alt="" class="ml-[1200px] ">
+          <h1 class="w-[471px] h-[117px] font-bold text-[96px] text-[#334155] ml-[260px] mt-[80px]">Kidsstory</h1>
+          <p class="w-[409px] h-[88px] font-semibold text-[36px] leading-[44px] text-[#334155] ml-[260px]">Английский детский 
+            сад и клуб</p>
+        </div>
+        <div class="absolute">
+          <img src="../../img/Vector (3).svg" alt="" class="absolute top-[350px]">
+          <img src="../../img/Group 1.svg" alt="" class="ml-[400px] relative top-[340px]">
+        </div>
+        
+        <div>
+          <img src="../../img/noroot 2.svg" alt="" class="ml-[580px] absolute">
+          <img src="../../img/1614600055_48-p-shkola-na-belom-fone-61 1.svg" alt="" class=" ml-[1090px] relative top-[30px]" >
+        </div>
+        <div class="form-container relative bottom-[530px] left-[1500px]">
+           
+          <h2 class="form-title">Запишитесь
+            на персональную экскурсию</h2>
+          
+  
+          <p class="form-description">
+            Заполните форму и посмотрите 
+            детский сад вживую в удобное для 
+            вас время
+          </p>
+          
+     
+          <form class="signup-form">
+            <input type="text" class="input-name" placeholder="Ваше имя" required>
+            <input type="tel" class="input-phone" placeholder="+7 _ _ _ - _ _ _ - _ _ - _ _" required>
+            <input type="email" class="input-email" placeholder="Ваш e-mail" required>
+            
+          
+            <label class="checkbox-container">
+              <input type="checkbox" class="input-checkbox" required>
+              <span class="checkbox-text">Я принимаю условия пользовательского соглашения</span>
+              <span class="checkmark"></span>
+            </label>
+            
+    
+            <button type="submit" class="submit-button">Записаться</button>
+          </form>
+        </div> 
+        
+
+      </div>
+    </section>
     <section></section>
     <section></section>
     <section></section>
     <section></section>
+    <section>
+      <div class="w-[1900px] h-[508px] mt-[40px] m-auto">
+        <div class="swiper">
+          <div class="ml-[60px]">
+            <h1 class="w-[3200px] font-bold text-[40px] text-[#8081BD]">Наша команда</h1>
+          </div>
+          <div class="swiper-wrapper mt-[50px]  ">
+            <div class="swiper-slide ml-[50px]">
+              <a href="#" data-hover="Контакты" class="open-modal" data-modal="modal7">
+
+                <img 
+                  src="https://kidsstory.life/wp-content/uploads/2022/07/photo1673945535-566x556.jpeg" 
+                  alt="" 
+                  class="w-[280px] rounded-[10px] h-[270px] cursor-pointer" 
+                  
+                >
+                <div class="mt-[30px]">
+                  <h1 class="w-[125px] text-[#8081BD] font-bold text-[20px]">РУССКИХ</h1>
+                  <h1 class="w-[125px] text-[#334155] font-normal text-[20px]">Ольга</h1>
+                  <p class="w-[110px] text-[#334155] font-medium text-[14px]">Тренер каратэ Стаж 5 лет</p>
+                </div>
+              </div>
+
+              </a>
+            
+          
+          
+            
+  
+            
+            <div class="swiper-slide relative right-[250px] ">
+              <img src="https://kidsstory.life/wp-content/uploads/2024/10/photo_2024-10-21_08-19-32-566x556.jpg" alt="" class="w-[280px] rounded-[10px] h-[270px]">
+              <div class="mt-[30px]">
+                <h1 class="w-[125px] text-[#8081BD] font-bold	text-[20px]">Фомина</h1>
+                <h1 class="w-[125px]  text-[#334155]  font-normal	text-[20px]">Лариса</h1>
+                <p class="w-[110px] text-[#334155] font-medium	text-[14px]">Воспитатель
+                  более 5 лет</p>
+              </div>
+            </div>
+            <div class="swiper-slide  relative right-[500px]  ">
+              <img src="https://kidsstory.life/wp-content/uploads/2024/10/photo_2024-10-21_08-16-32-566x556.jpg" alt="" class="w-[280px] rounded-[10px] h-[270px]">
+              <div class="mt-[30px]">
+                <h1 class="w-[125px] text-[#8081BD] font-bold	text-[20px]">Захарова</h1>
+                <h1 class="w-[125px]  text-[#334155]  font-normal	text-[20px]">Ксения</h1>
+                <p class="w-[110px] text-[#334155] font-medium	text-[14px]">ТВоспитатель
+                  более 2ух лет</p>
+              </div>
+            </div>
+            <div class="swiper-slide relative right-[750px] ">
+              <img src="https://kidsstory.life/wp-content/uploads/2024/10/photo_2024-10-21_08-14-14-566x556.jpg" alt="" class="w-[280px] rounded-[10px] h-[270px]">
+              <div class="mt-[30px]">
+                <h1 class="w-[125px] text-[#8081BD] font-bold	text-[20px]">Матвеева</h1>
+                <h1 class="w-[125px]  text-[#334155]  font-normal	text-[20px]">Галина</h1>
+                <p class="w-[190px] text-[#334155] font-medium	text-[14px]">Музыкальный руководитель
+                  более 35 лет</p>
+              </div>
+            </div>
+            <div class="swiper-slide  relative right-[1000px] ">
+              <img src="https://kidsstory.life/wp-content/uploads/2024/10/photo_2024-10-21_08-09-33-566x556.jpg" alt="" class="w-[280px] rounded-[10px] h-[270px]">
+              <div class="mt-[30px]">
+                <h1 class="w-[125px] text-[#8081BD] font-bold	text-[20px]">Амирджанян</h1>
+                <h1 class="w-[125px]  text-[#334155]  font-normal	text-[20px]">Сона</h1>
+                <p class="w-[110px] text-[#334155] font-medium	text-[14px]">Воспитатель
+                  более 20 лет</p>
+              </div>
+            </div>
+            <div class="swiper-slide relative right-[1250px]  ">
+              <img src="https://kidsstory.life/wp-content/uploads/2024/10/photo_2024-10-21_08-06-22-566x556.jpg" alt="" class="w-[280px] rounded-[10px] h-[270px]">
+              <div class="mt-[30px]">
+                <h1 class="w-[125px] text-[#8081BD] font-bold	text-[20px]">Кудрявцева</h1>
+                <h1 class="w-[125px]  text-[#334155]  font-normal	text-[20px]">Мария</h1>
+                <p class="w-[200px] text-[#334155] font-medium	text-[14px]">Преподаватель ФИЗО и хореографии
+                  более 5 лет</p>
+              </div>
+            </div>
+            <div class="swiper-slide relative right-[1500px]  ">
+              <img src="https://kidsstory.life/wp-content/uploads/2024/10/photo_2024-10-08_15-47-37-566x556.jpg" alt="" class="w-[280px] rounded-[10px] h-[270px]">
+              <div class="mt-[30px]">
+                <h1 class="w-[125px] text-[#8081BD] font-bold	text-[20px]">Усминцева</h1>
+                <h1 class="w-[125px]  text-[#334155]  font-normal	text-[20px]">Наталья</h1>
+                <p class="w-[110px] text-[#334155] font-medium	text-[14px]">Воспитатель
+                  более 12 лет</p>
+              </div>
+            </div>
+            <div class="swiper-slide  relative right-[1750px]  ">
+              <img src="https://kidsstory.life/wp-content/uploads/2024/08/photo_2024-10-16_12-49-58-566x556.jpg" alt="" class="w-[280px] rounded-[10px] h-[270px]">
+              <div class="mt-[30px]">
+                <h1 class="w-[125px] text-[#8081BD] font-bold	text-[20px]">РУССИХ</h1>
+                <h1 class="w-[125px]  text-[#334155]  font-normal	text-[20px]">Ольга</h1>
+                <p class="w-[110px] text-[#334155] font-medium	text-[14px]">Тренер каратэ Стаж 5 лет</p>
+              </div>
+            </div>
+            <div class="swiper-slide   relative right-[2000px] ">
+              <img src="https://kidsstory.life/wp-content/uploads/2024/02/arina-566x556.jpg" alt="" class="w-[280px] rounded-[10px] h-[270px]">
+              <div class="mt-[30px]">
+                <h1 class="w-[125px] text-[#8081BD] font-bold	text-[20px]">РУССКИХ</h1>
+                <h1 class="w-[125px]  text-[#334155]  font-normal	text-[20px]">Ольга</h1>
+                <p class="w-[110px] text-[#334155] font-medium	text-[14px]">Тренер каратэ Стаж 5 лет</p>
+              </div>
+            </div>
+            <div class="swiper-slide  relative right-[1800px] ">
+              <img src="https://kidsstory.life/wp-content/uploads/2023/12/shadybekova-566x556.jpg" alt="" class="w-[280px] rounded-[10px] h-[270px]">
+              <div class="mt-[30px]">
+                <h1 class="w-[125px] text-[#8081BD] font-bold	text-[20px]">РУССКИХ</h1>
+                <h1 class="w-[125px]  text-[#334155]  font-normal	text-[20px]">Ольга</h1>
+                <p class="w-[110px] text-[#334155] font-medium	text-[14px]">Тренер каратэ Стаж 5 лет</p>
+              </div>
+            </div>
+            <div class="swiper-slide relative right-[2850px]  ">
+              <img src="https://kidsstory.life/wp-content/uploads/2023/12/grinenko-566x556.jpg" alt="" class="w-[280px] rounded-[10px] h-[270px]">
+              <div class="mt-[30px]">
+                <h1 class="w-[125px] text-[#8081BD] font-bold	text-[20px]">РУССКИХ</h1>
+                <h1 class="w-[125px]  text-[#334155]  font-normal	text-[20px]">Ольга</h1>
+                <p class="w-[110px] text-[#334155] font-medium	text-[14px]">Тренер каратэ Стаж 5 лет</p>
+              </div>
+            </div>
+         
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </div>
+ 
+
+
+
+  
+
+ 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+    </section>
     <section></section>
     <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section> 
+      <div class="w-[1900px] h-[500px] m-auto mt-[30px]">
+        <div class="">
+          <div style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.com/maps/213/moscow/?from=api-maps&ll=37.373527%2C55.862635&mode=whatshere&origin=jsapi_2_1_79&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.373313%2C55.862594&whatshere%5Bzoom%5D=16&z=15.74" style="color:#eee;font-size:12px;position:absolute;top:14px;">Муравская улица, 38с3 — Яндекс Карты</a><iframe src="https://yandex.com/map-widget/v1/?from=api-maps&ll=37.373527%2C55.862635&mode=whatshere&origin=jsapi_2_1_79&whatshere%5Bpoint%5D=37.373313%2C55.862594&whatshere%5Bzoom%5D=16&z=15.74" width="1900" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+     </div>
+
+      </div> 
+  </section>
     <footer></footer>
   
   
@@ -205,3 +416,4 @@
 </body>
 
 </html>
+  

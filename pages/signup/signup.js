@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const name = document.querySelector("#signupName").value.trim();
       const email = document.querySelector("#signupEmail").value.trim();
       const password = document.querySelector("#signupPassword").value.trim();
+    
   
       const users = JSON.parse(localStorage.getItem("users")) || [];
       if (users.find((user) => user.email === email)) {

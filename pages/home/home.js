@@ -12,31 +12,31 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../../index.html";
     });
   });
-// Получаем все элементы, открывающие модальные окна
+
 const openModalButtons = document.querySelectorAll('.open-modal');
-// Получаем все модальные окна
+
 const modals = document.querySelectorAll('.modal');
-// Получаем все кнопки закрытия
+
 const closeButtons = document.querySelectorAll('.close');
 
-// Функция для открытия модального окна
+
 openModalButtons.forEach(button => {
   button.addEventListener('click', (e) => {
-    e.preventDefault(); // Предотвращаем переход по ссылке
+    e.preventDefault(); 
     const modalId = button.getAttribute('data-modal');
     const modal = document.getElementById(modalId);
     modal.style.display = 'flex';
   });
 });
 
-// Функция для закрытия модального окна
+
 closeButtons.forEach(button => {
   button.addEventListener('click', () => {
     button.closest('.modal').style.display = 'none';
   });
 });
 
-// Закрытие модального окна при клике вне его
+
 window.addEventListener('click', (event) => {
   modals.forEach(modal => {
     if (event.target === modal) {
@@ -50,28 +50,74 @@ window.addEventListener('click', (event) => {
 document.addEventListener("DOMContentLoaded", () => {
     const user = JSON.parse(localStorage.getItem("currendUser"));
     
-    // Проверка, есть ли пользователь в localStorage
+
     if (!user) {
         window.location.href = "../../index.html";
-        return; // Завершаем выполнение, чтобы остальной код не выполнялся
+        return; 
     }
 
-    // Отображение имени пользователя
+ 
     const userNameElement = document.getElementById("userName");
     if (userNameElement) {
         userNameElement.textContent = user.name;
     }
 
-    // Настройка кнопки "Выйти"
+
     const logoutBtn = document.querySelector("#logoutBtn");
     if (logoutBtn) {
         logoutBtn.addEventListener("click", () => {
-            localStorage.removeItem("currendUser"); // Удаляем данные пользователя
-            window.location.href = "../../index.html"; // Перенаправление на главную страницу
+            localStorage.removeItem("currendUser"); 
+            window.location.href = "../../index.html"; 
         });
     } else {
         console.error("Кнопка выхода не найдена.");
     }
 });
+
+
+
+var swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+  direction: getDirection(),
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  on: {
+    resize: function () {
+      swiper.changeDirection(getDirection());
+    },
+  },
+});
+
+function getDirection() {
+  var windowWidth = window.innerWidth;
+  var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+  return direction;
+}
+
+
+
+  function openModal(modalId) {
+    document.getElementById(modalId).classList.remove('hidden');
+  }
+
+  function closeModal(modalId) {
+    document.getElementById(modalId).classList.add('hidden');
+  }
+
+  let profileDropdownList = document.querySelector(".profile-dropdown-list");
+  let btn = document.querySelector(".profile-dropdown-btn");
+  
+  let classList = profileDropdownList.classList;
+  
+  const toggle = () => classList.toggle("active");
+  
+  window.addEventListener("click", function (e) {
+    if (!btn.contains(e.target)) classList.remove("active");
+  });
+
+  
 
   
