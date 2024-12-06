@@ -391,5 +391,274 @@ margin-bottom: 20px;
       transform: rotate(90deg);
     }
   } 
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 
+.h1 {
+  color: #8081BD ;
+  width: 539px;
+  height: 49px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
 
+.card {
+  width: 268px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.card16 {
+  width: 1100px;
+  height: 100px;
+  background-color:#EA5D4A;
+  border-radius: 10px;
+  margin-left: 500px;
+  z-index: 1000;
+  position: absolute;
+  top: 815px;
+}
+.p16 {
+  width: 980px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 100px; 
+  margin-top: -60px;
+}
+.p {
+  width: 180px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 150px; 
+  margin-top: -50px;
+}
+.card2 {
+  width: 400px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p2 {
+  width: 180px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 150px; 
+  margin-top: -50px;
+}
+.card3 {
+  width: 400px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p3 {
+  width: 180px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 150px; 
+  margin-top: -50px;
+}
+.card4 {
+  width: 400px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p4 {
+  width: 180px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 150px; 
+  margin-top: -50px;
+}
+.card5 {
+  width: 300px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p5 {
+  width: 180px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 100px; 
+  margin-top: -50px;
+}
+.card6 {
+  width: 350px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p6 {
+  width: 180px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 130px; 
+  margin-top: -50px;
+}
+.card7 {
+  width: 450px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p7 {
+  width: 220px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 130px; 
+  margin-top: -50px;
+}
+.card8 {
+  width: 450px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p8 {
+  width: 220px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 130px; 
+  margin-top: -50px;
+}
+.card9 {
+  width: 520px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p9 {
+  width: 420px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 130px; 
+  margin-top: -50px;
+}
+.card10 {
+  width: 300px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p10 {
+  width: 220px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 130px; 
+  margin-top: -50px;
+}
+.card11 {
+  width: 350px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p11 {
+  width: 220px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 130px; 
+  margin-top: -50px;
+}
+.card12 {
+  width: 500px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p12 {
+  width: 420px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 100px; 
+  margin-top: -50px;
+}
+.card13 {
+  width: 300px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p13 {
+  width: 320px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 130px; 
+  margin-top: -50px;
+}
+.card14 {
+  width: 300px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p14 {
+  width: 320px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 130px; 
+  margin-top: -50px;
+}
+.card15 {
+  width: 350px;
+  height: 100px;
+  background-color:#FFF6D1;
+  border-radius: 10px;
+}
+.p15 {
+  width: 320px;
+  height: 100px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color:#334155 ;   
+  margin-left: 110px; 
+  margin-top: -50px;
+}
